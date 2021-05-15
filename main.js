@@ -73,6 +73,14 @@ client.on('message', msg => {
         msg.channel.send( '💛' );
         emotion();
     }
+    else if ( msg.content.toLowerCase().includes( "good morning" )) {
+        msg.channel.send( 'Wakey wakey, eggs and bakey! 🌞' );
+        emotion();
+    } 
+    else if ( msg.content.toLowerCase().includes( "good night" )) {
+        msg.channel.send( 'Sleep tight! 🌙💤' );
+        emotion();
+    } 
 
     // Flower
     if ( msg.content.toLowerCase().includes( 'you need to wait' ) && msg.author.id === '731736201400418314' ) {
