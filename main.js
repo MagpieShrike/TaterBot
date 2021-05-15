@@ -2,6 +2,7 @@
 require('dotenv').config()
 const Discord = require('discord.js');
 const fs = require('fs');
+const { description } = require('./commands/random');
 
 const client = new Discord.Client();
 const prefix = "tot.";
@@ -51,7 +52,7 @@ client.on('message', msg => {
     }
     else if ( msg.content.toLowerCase() === 'tater' ) {
         msg.channel.send( 'tot' );
-        console.log(msg.author.id)
+        console.log(msg.author.id);
         emotion();
     }
     else if ( msg.content.toLowerCase().includes( 'this is stupid' )) {
@@ -77,6 +78,21 @@ client.on('message', msg => {
     if ( msg.content.toLowerCase().includes( 'you need to wait' ) && msg.author.id === '731736201400418314' ) {
         msg.channel.send( 'Have some patience!' );
     }
+
+    // Fish
+    if ( msg.content.toLowerCase().includes( 'you bought' && 'worms' ) && msg.author.id === '574652751745777665' ) {
+        msg.channel.send( 'oh worm?' );
+    }
+
+    if ( msg.author.id === '574652751745777665' ) {
+        for(var i = 0; i < msg.embeds.length; i++) {
+            if(msg.embeds[i].description.includes( 'You bought' && 'worms' )) {
+                msg.channel.send( 'oh worm?' );
+            };
+        };
+        
+    };
+    
 
     /*
     // Randerg
