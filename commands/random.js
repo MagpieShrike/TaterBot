@@ -1,8 +1,11 @@
 /*
+
+const run = false;
 const Axios = require('axios');
 const Cheerio = require('cheerio');
 
-const url = "https://www1.flightrising.com/scrying/predict";
+if ( run === true ) {
+const url = "URL";
 
 function sleep(millis) {
     return new Promise(resolve => setTimeout(resolve, millis));
@@ -26,7 +29,10 @@ function sleep(millis) {
 }
 
 getImage();
+
+}
 */
+
 
 
 
