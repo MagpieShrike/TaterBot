@@ -81,6 +81,20 @@ client.on('message', msg => {
         msg.channel.send( 'Sleep tight! 🌙💤' );
         emotion();
     } 
+    else if ( msg.content.toLowerCase().includes( "love" ) && msg.content.toLowerCase().includes( "tater" )) {
+        if ( msg.author.id === '230753391582773248' ) {
+            msg.channel.send( '💛💛💛' );
+            emotion();
+        }
+        else if ( msg.author.id === '237370836527349771' ) {
+            msg.channel.send( 'Why don\'t I believe you? 🤔' );
+            emotion();
+        }
+        else {
+            msg.channel.send( '❤️❤️❤️' );
+            emotion();
+        }  
+    } 
 
     // Flower
     if ( msg.content.toLowerCase().includes( 'you need to wait' ) && msg.author.id === '731736201400418314' ) {
