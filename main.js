@@ -95,6 +95,10 @@ client.on('message', msg => {
             emotion();
         }  
     } 
+    else if ( msg.content.toLowerCase().includes( "fuck" ) && msg.content.toLowerCase().includes( "tater" )) {
+        msg.channel.send( '🔥🔥🔥' );
+        emotion();
+    } 
 
     // Flower
     if ( msg.content.toLowerCase().includes( 'you need to wait' ) && msg.author.id === '731736201400418314' ) {
