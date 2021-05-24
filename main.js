@@ -95,7 +95,7 @@ client.on('message', msg => {
             emotion();
         }  
     } 
-    else if ( msg.content.toLowerCase().includes( "fuck" ) || msg.content.toLowerCase().includes( "hate" ) && msg.content.toLowerCase().includes( "tater" )) {
+    else if ( msg.content.toLowerCase().includes( "fuck" ) && msg.content.toLowerCase().includes( "tater" ) || msg.content.toLowerCase().includes( "hate" ) && msg.content.toLowerCase().includes( "tater" )) {
         msg.channel.send( '🔥🔥🔥' );
         emotion();
     } 
