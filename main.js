@@ -25,10 +25,11 @@ client.on('message', msg => {
     const args = msg.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
-    if( command === 'horoscope' ){
-        client.commands.get('horoscope').execute(msg, args);
-    };
     /*
+    if( command === 'tarot' ){
+        client.commands.get('tarot').execute(msg, args);
+    };
+    
     if( command === 'random' ){
         client.commands.get('random').execute(msg, args);
     };
@@ -40,6 +41,10 @@ client.on('message', msg => {
     // Tater
     if ( msg.content.toLowerCase().includes( 'raw potato' )) {
         msg.channel.send( 'Get tatered!' );
+        emotion();
+    }
+    if ( msg.content.toLowerCase().includes( 'crown' )) {
+        msg.channel.send( 'Tater is king! Bow down peasants!' );
         emotion();
     }
     else if ( msg.content.toLowerCase().includes( 'cease' )) {
