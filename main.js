@@ -129,7 +129,7 @@ client.on('message', msg => {
     // Flower
     if ( msg.content.toLowerCase().includes( 'you need to wait' ) && msg.author.id === '731736201400418314' ) {
         msg.channel.send( 'Have some patience!' );
-    }
+    } 
 
     // Fish
     if ( msg.content.toLowerCase().includes( 'you bought' && 'worms' ) && msg.author.id === '574652751745777665' ) {
