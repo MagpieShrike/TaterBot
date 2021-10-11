@@ -18,6 +18,6 @@
     "cheerio": "^1.0.0-rc.9",
     "discord.js": "^12.5.3",
     "dotenv": "^9.0.2",
-    "tarot-deck": "^2.0.1"
+    "tarot-deck": "^2.0.1" 
   }
 }
