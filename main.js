@@ -40,55 +40,76 @@ client.on('message', msg => {
 client.on('message', msg => {
     // Tater
     if ( msg.content.toLowerCase().includes( 'raw potato' )) {
+        if ( msg.author.id != '230753391582773248' ) {
         msg.channel.send( 'Get tatered!' );
         emotion();
+        }
     }
     if ( msg.content.toLowerCase().includes( 'crown' )) {
+        if ( msg.author.id != '230753391582773248' ) {
         msg.channel.send( 'Tater is king! Bow down peasants!' );
         emotion();
+        }
     }
     else if ( msg.content.toLowerCase().includes( 'cease' )) {
+        if ( msg.author.id != '230753391582773248' ) {
         msg.channel.send( 'NEVER!' );
         emotion();
+        }
     }
     else if ( msg.content.toLowerCase().includes( 'get tatered' )) {
+        if ( msg.author.id != '230753391582773248' ) {
         msg.channel.send( 'WOOOO!' );
         emotion();
+        }
     }
     else if ( msg.content.toLowerCase() === 'tater' ) {
+        if ( msg.author.id != '230753391582773248' ) {
         msg.channel.send( 'tot' );
         console.log(msg.author.id);
         emotion();
+        }
     }
     else if ( msg.content.toLowerCase().includes( 'this is stupid' )) {
+        if ( msg.author.id != '230753391582773248' ) {
         msg.channel.send( 'eat a potato about it' );
         emotion();
+        }
     }
     else if ( msg.content.toLowerCase().includes('potato') ) {
+        if ( msg.author.id != '230753391582773248' ) {
         msg.react( '🥔' )
             .then(console.log)
             .catch(console.error);
         emotion();
+        }
     }
     else if ( msg.content.toLowerCase().includes( "still workin' bud?" )) {
+        if ( msg.author.id != '230753391582773248' ) {
         msg.channel.send( 'yep!' );
         emotion();
+        }
     }
     else if ( msg.content === 'AMANDA' ) {
-        msg.channel.send( '💛' );
+        //msg.channel.send( '💛' );
         emotion();
     }
     else if ( msg.content.toLowerCase().includes( "good morning" )) {
+        if ( msg.author.id != '230753391582773248' ) {
         msg.channel.send( 'Wakey wakey, eggs and bakey! 🌞' );
         emotion();
+        }
     } 
     else if ( msg.content.toLowerCase().includes( "good night" )) {
+        if ( msg.author.id != '230753391582773248' ) {
         msg.channel.send( 'Sleep tight! 🌙💤' );
         emotion();
+        }
     } 
     else if ( msg.content.toLowerCase().includes( "love" ) && msg.content.toLowerCase().includes( "tater" )) {
         if ( msg.author.id === '230753391582773248' ) {
-            msg.channel.send( '💛💛💛' );
+            //msg.channel.send( '💛💛💛' );
+            msg.channel.send( 'Hmmph!' );
             emotion();
         }
         else if ( msg.author.id === '237370836527349771' ) {
@@ -141,7 +162,7 @@ client.on('message', msg => {
             msg.react( '💜' )
         }
         else if ( msg.author.id === '230753391582773248' ) {
-            msg.react( '💛' )
+            //msg.react( '💛' )
         }
         else if ( msg.author.id === '237370836527349771' ) {
             msg.react( '🔥' )
