@@ -146,13 +146,6 @@ client.on('message', msg => {
     };
     
 
-    /*
-    // Randerg
-    if ( msg.content.toLowerCase().includes( 'r' )) {
-        Randerg();
-    }
-    */
-
 
 
 
