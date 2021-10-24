@@ -2,7 +2,6 @@
 require('dotenv').config()
 const Discord = require('discord.js');
 const fs = require('fs');
-const { description } = require('./commands/random');
 
 const client = new Discord.Client();
 const prefix = "tot.";
@@ -20,12 +19,13 @@ client.once('ready', () => {
 
 // Commands
 client.on('message', msg => {
+    /*   
     if(!msg.content.startsWith(prefix) || msg.author.bot) return;
 
-    const args = msg.content.slice(prefix.length).split(/ +/);
+    const args = msg.content.slice(prefix.length).split(/ +/); 
     const command = args.shift().toLowerCase();
 
-    /*
+
     if( command === 'tarot' ){
         client.commands.get('tarot').execute(msg, args);
     };
